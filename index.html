@@ -2,7 +2,7 @@
 layout: workshop
 root: .
 venue: University of Melbourne
-address: University of Melbourne (room TBA)
+address: Computer Lab (room 313/314), McCoy Building, University of Melbourne
 country: Australia
 language: en
 latlng: -37.792910,144.961174
@@ -91,10 +91,7 @@ eventbrite: 15679681349
 <p>
   <strong>Where:</strong>
   {{page.address}}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+  Refer to <a href="http://maps.unimelb.edu.au/parkville/building/200">this map</a> for details.
 </p>
 {% endif %}
 
@@ -104,18 +101,29 @@ eventbrite: 15679681349
   Modify the block below if there are any special requirements.
 -->
 <p>
-  <strong>Requirements:</strong> Participants are asked to bring their laptop. 
-  They will be given access to
-  the <a href="http://resbaz.cloud.edu.au/ ">Data Intensive Tools for the Cloud</a>
+  <strong>Requirements:</strong> 
+  Participants will be given access to one of the computers in the computer lab, 
+  from which they will logon to the 
+  <a href="http://resbaz.cloud.edu.au/ ">Data Intensive Tools for the Cloud</a>
   (DIT4C) environment on the
-  <a href="http://its.unimelb.edu.au/research/our_services/cloud_computing/research_cloud">NeCTAR Research Cloud</a>,
-  so it's critical that this laptop is able to connect to either the UniWireless
-  or Eduroam wifi networks (see wifi and DIT4C login instructions <a href="#setup">below</a>).
-  The DIT4C environment has all the required software installed, however there are software
-  installation instructions <a href="#software_install">below</a> for participants who would like to
-  install the software on their own laptop. Also note that participants are required to
-  abide by Software Carpentry's
+  <a href="http://its.unimelb.edu.au/research/our_services/cloud_computing/research_cloud">NeCTAR Research Cloud</a>.
+  This environment has all the required software pre-installed,
+  so there's nothing participants need to bring or do in preparation for the workshop.
+  Having said that, there are software installation instructions <a href="#software_install">below</a> 
+  for participants who'd like to install the software on their own laptop before or after the workshop.
+  Also note that participants are required to abide by Software Carpentry's
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
+</p>
+
+<p>
+  <strong>Wifi:</strong>
+  If you're bringing a wifi device to the workshop,
+  access to the wifi network will depend on whether you're affiliated with the Univerity of Melbourne or not.
+  University of Melbourne staff/students can connect to the UniWireless network; 
+  instructions on how to do this and where to get assistance can be found
+  <a href="https://its.unimelb.edu.au/help/networks-access/networks-internet/connect-wireless/unimelb">here</a>.
+  Attendees from other Australian universities should find out (from the IT website of
+  their home institution) how to connect to the Eduroam wireless network.
 </p>
 
 <!--
@@ -270,30 +278,25 @@ please preview your site before committing, and make sure to run
 'tools/check' as well.
 -->
 <h2 id="setup">Setup</h2>
-<h3>Wifi</h3>
+<h3>Create a GitHub account</h3>
 <p>
-  Prior to the workshop, University of Melbourne staff/students should ensure that their
-  laptop can connect to UniWireless. Instructions on how to do this and where to get
-  assistance can be found
-  <a href="https://its.unimelb.edu.au/help/networks-access/networks-internet/connect-wireless/unimelb">here</a>.
-  Attendees from other Australian universities should find out (from the IT website of
-  their home institution) how to connect to the Eduroam wireless network.
+  <a href="https://github.com/">GitHub</a> is an online hosting service for all your code.
+  We'll be using it in the lesson on version control,
+  and GitHub credentials are used for login authentication on DIT4C.
+  GitHub accounts are free, so sign up for one if you don't already have an account.
 </p>
 <h3>Create a DIT4C Account</h3>
 <p>
-  During the week prior to the workshop, one of the instructors will email you the
+  During the first session of the workshop, the instructors will give you the
   compute node name and access code you'll need for the Data Intensive Tools for
   the Cloud (DIT4C) environment that is hosted on the NeCTAR Research Cloud. Once you've
-  got that name and code, navigate to
-  the <a href="http://resbaz.cloud.edu.au/ ">DIT4C homepage</a> and follow these instructions:
+  got that name and code, navigate to the
+  <a href="http://resbaz.cloud.edu.au/ ">DIT4C homepage</a> and follow these instructions:
   <ol>
-    <li>Click the "login" button and proceed to login. You can use your institution
-    username and password if you're at an Australian university, otherwise use your
-    GitHub credentials (everyone creates a GitHub account during the Git lessons anyway,
-    so you'll just be getting in early).</li>
+    <li>Click the "login" button and proceed to login using your GitHub credentials.</li>
     <li>Go to the "compute nodes" tab and click "claim compute node access".</li>
     <li>From the drop down menu, select the name of the compute node that the instructor
-    emailed to you and enter the corresponding access code.</li>
+    gave you and enter the corresponding access code.</li>
     <li>Go to the "containers" tab and add a new container named after yourself
     (e.g. johnsmith). The reason for this is that container names are unique (i.e. you can't
     have the same container name as anyone else in the room). Select an "IPython" image
@@ -307,9 +310,10 @@ please preview your site before committing, and make sure to run
 </p>
 <h3 id="software_install">(Optional) Software Installation</h3>
 <p>
-  The DIT4C environment comes with all the required software pre-installed, however if you would like to
-  install the software on your own computer (either before or after the workshop), here are the
-  instructions to do so.
+  The DIT4C environment comes with all the required software pre-installed, 
+  however if you would like to install the software on your own computer 
+  (either before or after the workshop),
+  here are the instructions to do so.
 </p>
 <div> <!-- Start of 'editor' section. -->
 <h4>Text Editor</h4>
